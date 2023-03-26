@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background: hsl(221, 100%, 96%);
+}
+
+.main-container {
+    display: flex;
+    border-radius: 30px;
+    width: 800px;
+    height: 500px;
+    background: white;
+    box-shadow: 1px 1px 20px 1px hsl(240, 1%, 79%);
+}
+
+
+/* styling the section of result */
+
+.result {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    width: 400px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+.result h2 {
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.points {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.final-result {
+    font-size: 50px;
+    color: hsl(0, 0%, 100%)
+}
+
+#total {
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+
+#great {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    margin-bottom: -25px;
+}
+
+p {
+    color: hsl(241, 100%, 89%);
+}
+
+
+
+/* styling the summary section */
+
+
+.summary {
+    width: 500px;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+
+}
+
+.summary div {
+    display: flex;
+    height: 50px;
+    width: 300px;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: -20px;
+}
+
+#summary-title {
+    text-align: start;
+}
+
+.summary h3 {
+    margin-left: 10px;
+}
+
+.summary strong {
+    margin-right: 10px;
+    color: black;
+}
+
+.summary span {
+    color: hsl(241, 100%, 89%);
+}
+
+#reaction {
+    color: hsl(0, 100%, 67%);
+    background: hsl(0, 41%, 95%);
+    ;
+}
+
+#memory {
+    color: hsl(39, 100%, 56%);
+    background: hsl(39, 100%, 93%);
+}
+
+#verbal {
+    color: hsl(166, 100%, 37%);
+    background: hsl(165, 64%, 91%);
+}
+
+#visual {
+    color: hsl(234, 85%, 45%);
+    background: hsl(234, 91%, 92%);
+}
+
+img {
+    vertical-align: middle;
+}
+
+button {
+    height: 50px;
+    width: 300px;
+    border-radius: 30px;
+    border: none;
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 375px) {
+
+    body {
+        font-size: 25px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 1200px;
+        
+        margin-left: -10px;
+    }
+
+    .points,
+    #result-title,
+    #great {
+        font-size: 40px;
+    }
+
+    p {
+        width: 500px;
+        font-size: 30px;
+
+    }
+
+    .result {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: -40px;
+        border-radius: 0% 0% 30px 30px;
+    }
+
+    .summary {
+        height: 600px;
+    }
+
+
+
+    .summary div {
+        margin: 10px;
+        width: 100%;
+        height: 70px;
+        font-size: 30px;
+
+    }
+
+    .summary img {
+        height: 30px;
+    }
+
+    button {
+        margin-top: 15px;
+        height: 80px;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .attribution {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 25px;
+    }
+
+    .attribution {
+        font-size: 25px;
+    }
+}
